@@ -1,1 +1,75 @@
-<p>login works!</p>
+<div class="box1">
+    <div class="box2">
+      <img src="assets\Img\2766594.png">
+      <br>
+      <span style="font-weight: 500; font-size: 15px;">ONLINE BOOK SHOPPING</span>
+    </div>
+    <div class="box3">
+      <mat-tab-group>
+        <mat-tab label="LOGIN">
+          <div class="credential">
+            <mat-form-field appearance="outline">
+              <mat-label>Email Id</mat-label>
+              <input matInput>
+            </mat-form-field>
+  
+            <mat-form-field appearance="outline">
+              <mat-label>Password</mat-label>
+              <input matInput [type]="hide ? 'password' : 'text'" placeholder="" formControlName="password" value="" >
+              <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+              </button>
+            </mat-form-field>
+            <div class="forgot">
+              <a href="">Forgot Password?</a>
+            </div>
+            <!-- <div class="loginbutton"> -->
+              <button mat-raised-button style="background-color: #A03037; color: #FFFFFF;">Login</button>
+            <!-- </div> -->
+          </div>
+          <div class="or">
+            ___________ <h4>OR</h4> ___________
+          </div>
+  
+          <div class="login-option-buttons">
+            <div class="Facebook">
+              <button mat-raised-button color="primary">Facebook</button>
+            </div>
+            <div class="Google">
+              <button mat-raised-button >Google</button>
+            </div>
+          </div>
+        </mat-tab>
+  
+        <mat-tab label="SIGNUP">
+          <div class="signup-details">
+            <mat-form-field appearance="outline">
+              <mat-label>Full Name</mat-label>
+              <input matInput placeholder="Enter full name" required>
+            </mat-form-field>
+  
+            <mat-form-field appearance="outline">
+              <mat-label>Email Id</mat-label>
+              <input matInput placeholder="Enter email id" required>
+            </mat-form-field>
+  
+            <mat-form-field appearance="outline">
+              <mat-label>Password</mat-label>
+              <input matInput [type]="hide ? 'password' : 'text'" placeholder="" formControlName="password" value="" required>
+              <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+              </button>
+            </mat-form-field>
+  
+            <mat-form-field appearance="outline">
+              <mat-label>Mobile Number</mat-label>
+              <input matInput placeholder="Enter mobile number" required>
+            </mat-form-field>
+  
+  
+            <button mat-raised-button style="background-color: #A03037; color: #FFFFFF;">Signup</button>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
