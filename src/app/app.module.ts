@@ -10,11 +10,13 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
+import { ForgotpasswordComponent } from './Components/forgotpassword/forgotpassword.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    ForgotpasswordComponent
   ],
   imports: [
     BrowserModule,
