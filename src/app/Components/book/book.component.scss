@@ -44,12 +44,16 @@
   .rating {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 8px;
+    margin-right: 7vw;
+    color: white;
     
   }
   
   .rating-value {
     font-weight: bold;
+    font-size: 3vh;
     margin-right: 4px;
     background-color: #388E3C;
   }

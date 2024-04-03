@@ -16,6 +16,15 @@ import { BookComponent } from './Components/book/book.component';
 import { SortComponent } from './Components/sort/sort.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { provideHttpClient } from '@angular/common/http';
+import { CartComponent } from './Components/cart/cart.component';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatSelectModule} from '@angular/material/select';
+import { PersonalDetailsComponent } from './Components/personal-details/personal-details.component';
+import { OrderPlacedComponent } from './Components/order-placed/order-placed.component';
+import { MatTableModule } from '@angular/material/table';
+import { ViewBookComponent } from './Components/view-book/view-book.component';
 
 
 @NgModule({
@@ -25,7 +34,11 @@ import { CommonModule } from '@angular/common';
     ForgotpasswordComponent,
     DashboardComponent,
     BookComponent,
-    SortComponent
+    SortComponent,
+    CartComponent,
+    PersonalDetailsComponent,
+    OrderPlacedComponent,
+    ViewBookComponent
   ],
   imports: [
     BrowserModule,
@@ -37,10 +50,18 @@ import { CommonModule } from '@angular/common';
     MatInputModule,
     MatExpansionModule,
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatTableModule
   ],
   providers: [
     provideClientHydration(),
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    provideClientHydration(),
+    provideAnimationsAsync(),
+    provideHttpClient()
   ],
   bootstrap: [AppComponent]
 })

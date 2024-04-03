@@ -5,7 +5,9 @@
             <h2 class="book-title">{{ book.title }}</h2>
             <p class="book-author">by {{ book.author }}</p>
             <div class="rating">
-                <span class="rating-value">{{ book.rating }}*</span>
+                <span class="rating-value">{{ book.rating }}  <span class="material-symbols-outlined">
+                    star
+                    </span></span>
                 <span class="rating-count">({{ book.ratingCount }})</span>
             </div>
             <p class="book-price">Rs. {{ book.price }}</p>
